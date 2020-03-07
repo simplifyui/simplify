@@ -1,0 +1,111 @@
+@import './variables.scss';
+/*dafault styles saame an all devices*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.s-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.s-row-colums{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.s-no-wrap{
+    flex-wrap: nowrap;
+}
+@for $i from 1 through $nthorder{
+    .s-order-#{$i}
+    {
+        order:$i;
+    }
+}
+@for $i from 1 through $colums{
+   .s-col-#{$i}
+   {
+       flex-basis:100%/ $colums *$i;
+       padding: 5px;
+   }
+}
+
+/*small devices*/
+@media (min-width: 0) {  
+    @for $i from 1 through $colums{
+        .s-col-sm-#{$i}
+        {
+            flex-basis:100%/ $colums *$i;
+            padding: 5px;
+        }
+     }
+     
+     @for $i from 1 through $nthorder{
+        .s-order-sm-#{$i}
+        {
+            order:$i;
+        }
+    }
+}
+
+/*medium  devices*/
+@media (min-width: 768px) {  
+    @for $i from 1 through $colums{
+        .s-col-md-#{$i}
+        {
+            flex-basis:100%/ $colums *$i;
+            padding: 5px;
+        }
+     }
+
+     @for $i from 1 through $nthorder{
+        .s-order-md-#{$i}
+        {
+            order:$i;
+        }
+    }
+}
+
+/*larg devices*/
+@media (min-width: 992px) { 
+    @for $i from 1 through $colums{
+        .s-col-lg-#{$i}
+        {
+            flex-basis:100%/ $colums *$i;
+            padding: 5px;
+        }
+     }
+
+     @for $i from 1 through $nthorder{
+        .s-order-lg-#{$i}
+        {
+            order:$i;
+        }
+    }
+}
+
+/*extra larg devices*/
+@media (min-width: 1200px) {  
+    @for $i from 1 through $colums{
+        .s-col-xl-#{$i}
+        {
+            flex-basis:100%/ $colums *$i;
+            padding: 5px;
+        }
+     }
+
+     @for $i from 1 through $nthorder{
+        .s-order-xl-#{$i}
+        {
+            order:$i;
+        }
+    }
+}
+
+

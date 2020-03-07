@@ -1,0 +1,107 @@
+ @import './variables';
+/*extra small to small devices*/
+//flex classes
+.s-d-flex{
+    display: flex;
+}
+.s-flex-wrap{
+    flex-wrap: wrap;
+}
+.s-center-item{
+    align-items: center;
+}
+
+.s-space-between{
+    justify-content: space-between;
+}
+.s-space-around{
+    justify-content: space-around;
+}
+//text colors
+.s-primary-text{
+    color:$primary;
+}
+.s-secondary-text{
+    color:$secondary;
+}
+.s-info-text{
+    color: $info;
+}
+.s-danger-text{
+    color: $danger;
+}
+.s-dark-text{
+    color: $dark;
+}
+.s-text-center{
+    text-align: center;
+}
+.s-content-center{
+    margin: auto;
+}
+.s-container{
+    margin: 0 auto;
+}
+.s-card{
+    width: 100%;
+    box-shadow: $shadow;
+}
+.pa-16{
+    padding: 16px;
+}
+.s-fluid{
+    width: 100%;
+}
+.s-hidden{
+    display: none;
+}
+//extra small devices
+@media(min-width:560px){
+    .s-container-1{
+        width:180px;
+    }
+}
+
+@media (min-width: 0) {  
+ .s-container{
+     width: 100%;
+ }
+ .s-s-none{
+     display: none;
+ }
+}
+
+/*medium  devices*/
+@media (min-width: 768px) {  
+    .s-container{
+        width:720px;
+    }
+    .s-container-1{
+        width: 360px;
+    }
+    .s-md-none{
+        display: none;
+    }
+}
+
+/*larg devices*/
+@media (min-width: 992px) { 
+    .s-container{
+        width:  960px;
+    }
+    .s-lg-none{
+        display: none;
+    }
+}
+
+/*extra larg devices*/
+@media (min-width: 1200px) {  
+    .s-container{
+        width: 1140px
+    }
+     .s-lx-none{
+        display: none;
+    }
+}
+
+

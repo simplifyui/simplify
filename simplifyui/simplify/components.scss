@@ -1,0 +1,972 @@
+/*extra small to small devices*/
+.s-btn, .s-btn-lg, .s-btn-md,.s-btn-round{
+    display: inline-block;
+    text-transform: capitalize;
+    &:hover{
+        background: $btnhover;
+        color: $white;
+    }
+}
+.s-btn, .s-btn-lg, .s-btn-md,.s-btn-circle-sm,.s-btn-circle,.s-btn-circle-lg,.s-input,.s-input-outline, .s-input-field{
+    border-width:0;
+    outline: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: $transition;
+}
+.s-btn-circle-sm,.s-btn-circle,.s-btn-circle-lg{
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.s-btn-circle{
+    width: 50px;
+    height: 50px;
+}
+.s-btn-circle-lg{
+    width: 60px;
+    height: 60px;
+}
+.s-btn{
+    padding: 10px 32px;
+    text-align: center;
+}
+.s-btn-md{
+    padding: 12px 35px;
+}
+
+.s-btn-lg{
+    padding: 15px 40px;
+}
+.s-btn-round{
+    border-radius: 20px;
+    padding: 10px 32px;
+}
+.s-btn-primary{
+    background: $primary;
+    color: $white;
+    &:hover{
+        background:rgba($primary, .8);
+    }
+}
+
+.s-btn-secondary{
+    background: $secondary;
+    color: $white;
+    &:hover{
+        background:rgba($secondary, .8);
+    }
+}
+
+.s-btn-danger{
+    background: $danger;
+    color: $white;
+    &:hover{
+        background:rgba($danger, .8);
+    }
+}
+
+.s-btn-info{
+    background: $info;
+    color: $white;
+    &:hover{
+        background: rgba($info, .8);
+    }
+}
+
+.s-btn-dark{
+    background: $dark;
+    color: $white;
+    &:hover{
+        background:rgba($dark, .8);
+    }
+}
+.s-btn-light{
+    background: $light;
+    color: $dark;
+    &:hover{
+        background:rgba($light, .8);
+        color:  $dark;
+    }
+}
+
+.s-btn-primary-outline{
+    border:1px solid $primary;
+    background: none;
+    &:hover{
+        background:$primary;
+        color: $white;
+    }
+}
+
+.s-btn-secondary-outline{
+    border:1px solid $secondary;
+    background: none;
+    &:hover{
+        background:$secondary;
+        color: $white;
+    }
+    &:active{
+        box-shadow: $shadow2;
+    }
+}
+
+.s-btn-danger-outline{
+    border:1px solid $danger;
+    background: none;
+    &:hover{
+        background:$danger;
+        color: $white;
+    }
+}
+
+.s-btn-info-outline{
+    border:1px solid $secondary;
+    background: none;
+    &:hover{
+        background:$secondary;
+        color: $white;
+    }
+}
+
+.s-btn-dark-outline{
+    border:1px solid $dark;
+    background: none;
+    &:hover{
+        background:$dark;
+        color: $white;
+    }
+}
+.s-btn-block{
+    width:100%;
+    text-align: center;
+}
+.s-soft-secondary{
+    box-shadow: 0 0 0 2px $secondary, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $secondary; 
+    }
+}
+
+.s-soft-primary{
+    box-shadow: 0 0 0 2px $primary, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $primary; 
+    }
+}
+.s-soft-danger{
+    box-shadow: 0 0 0 2px $danger, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $danger; 
+    }
+}
+.s-soft-dark{
+    box-shadow: 0 0 0 2px $dark, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $dark; 
+    }
+}
+.s-soft-light{
+    box-shadow: 0 0 0 2px $light, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $light; 
+    }
+}
+.s-soft-info{
+    box-shadow: 0 0 0 2px $info, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $info; 
+    }
+}
+.s-p-10{
+    padding: 10px;
+}
+.h-400{
+    height: 400px;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 12px;
+}
+.h-700{
+    height: 700px;
+    width: 100%;
+}
+  //input -------------------------------------
+  .s-input,.s-input-outline, .s-input-field{
+      padding: 10px;
+      box-shadow: 0 0 0 1px $dark;
+      cursor: auto;
+  }
+  .s-input-outline-primary{
+    box-shadow: 0 0 0 1px $primary;/*,inset 0  4px 4px rgb(255, 255, 255,.5);*/
+    background: transparent;
+}
+
+.s-input-outline-secondary{
+    box-shadow: 0 0 0 1px $secondary;/*,inset 0  4px 4px rgb(255, 255, 255,.5);*/
+    background: transparent;
+}
+
+.s-input-outline-danger{
+    box-shadow: 0 0 0 1px $danger;/*,inset 0  4px 4px rgb(255, 255, 255,.5);*/
+    background: transparent;
+}
+/*checkbox ------------------------------------*/
+
+.s-checkbox-switch{
+    width: 55px;
+    height: 25px;
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    appearance: none;
+    background: #e6e4e4;
+    transition: .4s;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 1.5px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #fff;
+        transition:.4s;
+        box-shadow: $shadow;
+    }
+    &:hover::before{
+        box-shadow:0 0 8px 8px #9c9c9cb4;
+    }
+    &:checked::before{
+        background: #fff;
+        left:32px;
+        transition:.4s;
+    }
+}
+
+
+/*check box thim*/
+.s-checkbox-switch.s-primary{
+    &:checked{
+        background:$primary;
+    }
+    &:checked::before{
+        background:$lightgray;
+    }
+    &:checked:hover::before{
+        box-shadow: $lightgray;
+    }
+}
+.s-checkbox-switch.s-secondary{
+    &:checked{
+        background:$secondary;
+    }
+    &:checked::before{
+        background:$lightgray;
+    }
+    &:checked:hover::before{
+        box-shadow:0 0 8px 8px rgba($secondary, .5);
+        }
+}
+
+
+.s-checkbox-switch.s-darken{
+    &:checked{
+        background:$dark;
+    }
+    &:checked::before{
+        background:$lightgray
+    }
+    &:checked:hover::before{
+        box-shadow:0 0 8px 8px #656866b4;
+    }
+}
+
+/* radio ------------------------*/
+.s-radio{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: #e4e3e3;
+    appearance: none;
+    position: relative;
+    &:checked{
+        border:2px solid $checkprimary;
+    }
+    &::after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top:6px;
+        left: 6px;
+        background:$checkprimary;
+        z-index: 2;
+        visibility: hidden;
+    }
+    &:checked::after{
+        visibility:visible;
+    }
+
+}
+/*radio them------------------------------*/
+.s-radio.s-secondary{
+    &:checked{
+        border:2px solid $secondary;
+    }
+    &::after{
+        background: $secondary;
+    }
+}
+
+/* range ------------------------------*/
+.s-range{
+    width: 100%;
+    height: 5px;
+    background: #e6e4e4;
+    outline: none;
+    appearance: none;
+    position: relative;
+    &::-webkit-slider-thumb{
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $primary;
+    }
+    &::-webkit-slider-thumb:hover{
+        box-shadow:0 0 8px 8px #938fccb4;
+        }
+    &::-moz-range-thumb{
+        appearance: none;
+    }
+    
+}
+.s-input-outline{
+    border-radius: $r5;
+    padding:10px 17px;
+    background:none;
+    background-image:none;
+    border:1.3px solid #020202;
+    border-radius: 5px;
+    transition:border-color .25s ease, box-shadow .25s ease;
+    &:focus {
+          outline:0;
+          border-color:#8d36f0;
+          box-shadow: $shadow3;
+    }
+}
+.s-input-field{
+    width: 100%;
+    border-bottom: 1px solid $dark;
+    outline: none;
+    padding: 8px 12px;
+    background: transparent;
+    z-index: 3;
+
+}
+.s-input-container{
+    position: relative;
+    .s-label{
+        position: absolute;
+        bottom:0;
+        left: 2px;
+        z-index: -1;
+    }
+    .s-input-field:focus{
+        border-color:$primary;
+        transition: .4s;
+    }
+    .s-input-field:valid ~ label{
+        top:0;
+        opacity:.1;
+    }
+    .s-input-field:focus ~ label{
+        top:0;
+        transition: .4s;
+        opacity: .5;
+        font-size: 10px;
+    }
+}
+//alert --------------------
+.s-alert{
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: .875rem;
+    line-height: 1.333rem;
+    font-weight: 450;
+    color: $light;
+    overflow-wrap: break-word;
+}
+.s-alert-content{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+}
+.s-alert-error{
+    background: $danger;
+}
+.s-alert-info{
+    background: $info;
+}
+.s-alert-success{
+    background: $secondary;
+}
+.s-alert-warning{
+    background: $warning;
+}
+
+//outline alert 
+.s-alert-outline-error{
+   border: 1px solid  $danger;
+   color: $danger;
+}
+.s-alert-outline-info{
+ border: 1px solid $info;
+ color: $info;
+}
+.s-alert-outline-success{
+    border: 1px solid  $secondary;
+    color:$secondary;
+}
+.s-alert-outline-warning{
+    border: 1px solid $warning;
+    color:$warning;
+}
+.s-avatar,.s-icon,.s-badg, .s-badg-badg{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color:$light;
+    padding: 2px;
+}
+.s-avatar-img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+//badge
+.s-badg{
+    position: relative;
+    min-width: 30px;
+    min-height: 30px;
+   
+    .s-badg-badg{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -8;
+        right: -20;
+        background-color: red;
+    }
+}
+
+.s-toolbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+    box-shadow: $shadow-default;
+    padding: 0 12px;
+    color:$lightgray;
+}
+.s-toolbar-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.s-toolbar-content{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.25rem;
+    letter-spacing: 0.0071428571em;
+}
+.s-nav{
+    display: flex;
+    
+}
+.s-nav-item{
+    padding:0 16;
+    list-style-type: none;
+    line-height: 0.007rem;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+   
+}
+.s-nav-link{
+    text-decoration: none;
+    color:$lightgray;
+    font-size: 1.25rem;
+    font-family: inherit;
+    line-height: 1.375rem;
+    display: inline-flex;
+    align-items: center;
+}
+.s-app{
+    position: sticky;
+    top: 0;
+}
+
+.s-button-navigation{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: $shadow-default;
+}
+.s-btn-nav{
+    border-radius: 0;
+    background-color: inherit;
+    max-width: 168px;
+    min-width: 80px;
+    text-align: center;
+    padding: 0 12px;
+
+    &:hover{
+        background: $lightgray;
+        color: $dark;
+    }
+}
+
+.s-list-group{
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: "..."; 
+    .s-list-item{
+        width: 100%;
+        overflow: hidden;
+    }
+    .s-list{
+        padding: 0 16px;
+        &:hover{
+            background-color: rgb(248, 247, 247);
+         }        
+    }
+}
+.s-light{
+    color: $light;
+}
+.s-drawer{
+    overflow: hidden;
+}
+.s-drawer-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color:$backdrop;
+}
+.s-drawer-contents{
+    height: 100%;
+    overflow: auto;
+    background-color:$white;
+    width: 300px;
+}
+.left{
+    transform:translate(-100%,0);
+}
+.top-left{
+    transform:translate(-100%,-100%); 
+}
+.s-list{
+    list-style-type: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    letter-spacing: 0.0071428571em; 
+    transition: 2s ease-in-out;
+}    
+//icon
+.s-icon{
+    width: 30px;
+    height: 30px;
+    font-size:24px !important;
+    background:none;
+    font-size: inherit;
+    &:hover{
+        background-color: rgba($light, .8);
+        transition: $transition;
+    }
+}
+.s-btn .s-icon{
+    width: 18px;
+    height: 18px;
+    background:none;
+    font-size:18px !important;
+    &:hover{
+        background-color:none;
+    }
+}
+
+.s-icon.text--primary{
+    background-color: rgba($primary, .8);
+}
+.s-d-flex-colums{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+}
+.s-dialog{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1000;
+    background:$backdrop;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .2s, opacity .2s linear;
+}
+.s-dialog-container{
+    box-shadow: $shadow;
+    z-index: 1001;
+    opacity: 1;
+    word-break: break-all;
+    position: relative;
+    transition: all .2s;
+}
+.s-small,.s-larg,.s-medium{
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    min-height: 200px;
+    max-height: 500px;
+}
+.s-dialog-action{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+}
+.s-dialog.s-show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .4s linear;
+    //animation: open 2s;
+}
+@keyframes open{
+    from{opacity: 0}
+    to{opacity:1}
+}
+@keyframes close{
+    from{opacity: 1}
+    to{opacity:0}
+   
+}
+.s-small{
+    width: 300px;
+}
+.s-medium{
+    top: 30%;
+    max-width: 90%;
+    min-width: 500px;
+    overflow-y: scroll;
+}
+.s-larg{
+    top: 30%;
+    max-width: 90%;
+    min-width: 700px;
+    overflow-y: scroll;
+}
+//flip card 
+.s-flip-card{
+    min-height: 40px;
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background: $white;
+    box-shadow: $shadow3;
+    &:hover{
+        transform: rotateY(180deg);
+    }
+    .s-flip-card-front, .s-flip-card-back{
+        position: absolute;
+        width: inherit;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    .s-flip-card-back {
+        transform: rotateY(180deg);
+      }
+}
+//accordin and list
+.s-according{
+    overflow: hidden;
+    width: 100%;
+}
+.s-accord-item{
+    margin: 1px 0;
+    overflow: hidden;
+}
+.s-accord-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 3px 16px;
+    z-index: 3;
+}
+.s-accord-item:last-child{
+    border-radius: 0 0 4px 4px;
+} 
+.s-accord-item:first-child{
+    border-radius: 4px 4px 0 0;
+} 
+.s-accord-content{
+    padding: 16px;
+    transition: all 2s linear;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    background-color:$white;
+}
+.s-list{
+    padding: 16px;
+    background-color:$white;
+}
+.s-list-item{
+    list-style-type: none;
+    line-height: 1.2rem;
+    border-radius: 4px;
+    padding: 5px;
+}
+.s-list-item:hover{
+    background: rgba($primary, .8);
+}
+.s-list-link{
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.s-card-body,.s-card-body-fluid{
+    background:$white;
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    margin:auto;
+    .s-card-title{
+        width: 100%;
+        padding: 16px;
+        font-weight: 500;
+        font-size:20px;
+        text-transform: capitalize;
+        background: $primary;
+        border-radius: 5px 5px 0 0;
+
+    }
+    .s-card-content{
+        width: 100%;
+        padding: 16px;
+        margin-top: 5px;
+        line-height: 1.2;
+    }
+    .s-card-footer{
+        padding: 16px;
+        margin-top:5px;
+        border-radius: 0 0 4px 4px;
+        background: $primary;
+    }
+}
+
+//carousel2
+.s-carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .s-carousel-track-container{
+        height: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    .s-carousel-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .s-carousel-track{
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: $transition;
+    }
+    .s-carousel-slide{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .s-carousel-btn{
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%);
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        color:$lightgray;
+        font-size: 1.3rem;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.3);
+
+       
+    }
+  .right{
+        right: 40px;
+    }
+  .left{
+        left: 40px;
+    }
+    .s-carousel-nav{
+        position: relative;
+        bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .s-carousel-indicator{
+        border: 0;
+        border-radius: 50%;
+        margin: 12px;
+        width: 15px;
+        height: 15px;
+        background:rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+    .s-current-btn{
+        background: $lightgray;
+        border: 1px solid $dark;
+    }
+}
+.s-carousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-list-card{
+    min-width: 200px;
+    box-shadow: $shadow3;
+    ul{
+        width: 100%;
+        li{
+            list-style-type: none;
+            border-bottom: 1px solid $darkborder;
+            padding: 10px;
+            &:hover{
+                background: $lightgray;
+            }
+        }
+      }
+}
+
+
+.s-footerfixed-card{
+    width: 100%;
+    height: 60px;
+    border-radius: 32px 32px 0 0;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    box-shadow: $shadow3;
+    .s-footer-nav{
+        flex-basis: 100%;
+        display: flex;
+        justify-content:space-around;
+        list-style: none;
+        align-items:center;
+        justify-items: center;
+        .s-footer-list-link{
+            text-decoration: none;
+
+        }
+    }
+}
+@media (max-width:768px) {  
+.s-larg{
+        width: 90%;
+    }
+ } 
+ @media (max-width:500px) {
+    .s-drawer-contents{
+        width:70%;
+    }
+ }
+@media (min-width: 0) {  
+    .s-flip-card{
+        width: 250px;
+    }
+}
+
+/*medium  devices*/
+@media (min-width: 768px) {  
+    .s-flip-card{
+        width: 300px;
+    }
+    .s-drawer-contents{
+        width: 300px;
+    }
+}
+
+/*larg devices*/
+@media (min-width: 992px) { 
+    .s-flip-card{
+        width: 350px;
+    }
+}
+
+/*extra larg devices*/
+@media (min-width: 1200px) {  
+    
+}
+
