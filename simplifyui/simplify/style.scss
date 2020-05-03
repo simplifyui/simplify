@@ -1,18 +1,30 @@
-@import url(./MaterialDesignIcon/css/materialdesignicons.min.css);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.1.45/css/materialdesignicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import './components';
+@import './grid';
+@import './classes';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family: 'Roboto','Times New Roman';
 }
-.s-overflow-x-hidden{
-    overflow-x: hidden;
-    width: 100%;
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba($dark, .8);
 }
-.s-overflow-y-hidden{
-    height: 100%;
-    overflow: hidden;
+p{
+    font-size: 1rem !important; 
+    font-weight: 400;
+    letter-spacing: 0.009375em !important;
+    line-height: 1.75rem;
+    
 }
-button::-moz-focus-inner {
-    border: 0;
-  }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}

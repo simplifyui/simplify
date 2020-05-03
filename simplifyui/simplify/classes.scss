@@ -1,39 +1,6 @@
- @import './variables';
+@import './variables';
 /*extra small to small devices*/
-//flex classes
-.s-d-flex{
-    display: flex;
-}
-.s-flex-wrap{
-    flex-wrap: wrap;
-}
-.s-center-item{
-    align-items: center;
-}
-
-.s-space-between{
-    justify-content: space-between;
-}
-.s-space-around{
-    justify-content: space-around;
-}
-//text colors
-.s-primary-text{
-    color:$primary;
-}
-.s-secondary-text{
-    color:$secondary;
-}
-.s-info-text{
-    color: $info;
-}
-.s-danger-text{
-    color: $danger;
-}
-.s-dark-text{
-    color: $dark;
-}
-.s-text-center{
+.s-center{
     text-align: center;
 }
 .s-content-center{
@@ -42,33 +9,236 @@
 .s-container{
     margin: 0 auto;
 }
+.s-responsive{
+    width:100%;
+}
+.s-abs-top{
+    position: absolute;
+    top: 1;
+    left:0;
+}
+.s-abs-bottom{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.s-d-flex, .s-input-group{
+    display: flex;
+}
+.s-align-center{
+    align-items: center;
+}
+.s-center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .s-card{
     width: 100%;
-    box-shadow: $shadow;
+    box-shadow: $shadow1;
+    background-color:$white;
 }
+.s-card-1{
+    width: 100%;
+    box-shadow: $shadow1;
+    background-color:$white;
+    padding: 16px;
+    border-radius: 4px;
+}
+.s-shadow{
+    box-shadow: $shadow1;
+}
+.s-spacer {
+    width: 100%;
+  }
+
 .pa-16{
     padding: 16px;
 }
 .s-fluid{
     width: 100%;
 }
-.s-hidden{
+.s-flat{
+    box-shadow: none;
+}
+.s-flip-back{
+    transform: rotateY(360deg);
+}
+.s-none{
     display: none;
 }
-//extra small devices
-@media(min-width:560px){
-    .s-container-1{
-        width:180px;
+.s-d-block{
+    display: block !important;
+}
+//them
+.s-bg-primary{
+    background: $primary !important;
+}
+.s-bg-secondary{
+    background: $secondary !important;
+}
+.s-bg-danger{
+    background: $danger !important;
+}
+.s-bg-info{
+    background: $info !important;
+}
+.s-bg-light{
+    background: $light !important;
+}
+.s-bg-dark{
+    background: $dark !important;
+}
+
+//text
+.s-primary-text{
+    color: $primary;
+}
+.s-secondary-text{
+    color: $secondary;
+}
+.s-danger-text, .errordiv{
+    color: $danger;
+}
+.errordiv{
+    font-size: 0.85rem;
+}
+.s-eye{
+    visibility: hidden;
+    cursor: pointer;
+}
+.s-opasity-5{
+    opacity:.3;
+}
+.s-opasity-1-t0{
+    opacity: 0 !important;
+    top:0;
+}
+.s-info-text{
+    color: $info;
+    li, ul, a{
+        color: inherit !important;
+    }
+}
+.s-light-text{
+    color: $light !important;
+    li, ul, a{
+        color: inherit !important;
     }
 }
 
+.s-dark-text{
+    color: $dark;
+    li, ul, a{
+        color: $dark !important;
+    }
+}
+.s-heading{
+    font-size: 3rem !important;
+    font-weight: 300;
+}
+//padding
+@for $i from 1 through $paddingnum{
+    .s-p-#{$i}
+    {
+        padding: $i + px;
+    }
+    .s-pt-#{$i}
+    {
+        padding-top: $i + px;
+    }
+
+    .s-pb-#{$i}
+    {
+        padding-bottom: $i + px;
+    }
+
+    .s-pl-#{$i}
+    {
+        padding-left: $i + px;
+    }
+    .s-pr-#{$i}
+    {
+        padding-right: $i + px;
+    }
+    .s-r-#{$i}{
+        border-radius: $i + px !important;
+    }
+}
+
+//border radius borderradnum == paddingnum
+@for $i from 1 through $paddingnum{
+    .s-m-#{$i}
+    {
+        margin: $i + px;
+    }
+    .s-mt-#{$i}
+    {
+       margin-top:  $i + px;
+    }
+    .s-ml-#{$i}
+    {
+       margin-left: $i + px;
+    }
+    .s-mr-#{$i}
+    {
+        margin-right:  $i + px;
+    }
+    .s-mb-#{$i}
+    {
+        margin-bottom:  $i + px;
+    }
+}
+.s-top{
+    position: absolute;
+    top: 90px;
+}
+.s-bottom{
+    position: absolute;
+    bottom: 10px;
+}
+.s-center, .s-table.s-center th{
+    text-align: center;
+}
+//all devices
 @media (min-width: 0) {  
  .s-container{
      width: 100%;
  }
- .s-s-none{
-     display: none;
- }
+ @for $i from 1 through 6{
+    .s-order-#{$i}{
+        order: $i;
+    }
+}
+}
+//small devices only
+@media (max-width: 670px) {  
+    @for $i from 1 through 6{
+       .s-order-#{$i}-so{
+           order: $i;
+       }
+    .s-none-so{
+        display: none;
+    }
+    .s-fluid-so{
+        width: 100%;
+    }
+}
+@for $i from 1 through $paddingnum{
+    .s-mt-#{$i}-so{
+        margin-top: $i + px;
+    }
+    .s-m-#{$i}-so{
+        margin: $i + px;
+    }
+    .s-ml-#{$i}-so{
+        margin-left: $i + px;
+    }
+    .s-mr-#{$i}-so{
+        margin-right: $i + px;
+    }
+}
 }
 
 /*medium  devices*/
@@ -76,16 +246,59 @@
     .s-container{
         width:720px;
     }
-    .s-container-1{
-        width: 360px;
-    }
     .s-md-none{
         display: none;
     }
 }
-
+//small to mediun
+@media(max-width:768px){
+    .s-sm-none{
+        display: none;
+    }
+    .s-sm-d-block{
+        display: block;
+    }
+    .s-sm-d-flex{
+        display: flex;
+    }
+    @for $i from 1 through 6{
+        .s-order-md-#{$i}{
+            order: $i;
+        }
+    }
+}
+//medium only
+@media only screen and (min-device-width: 670px) and (max-device-width: 768px){
+    @for $i from 1 through $paddingnum{
+        .s-p-#{$i}-mo
+        {
+            border-radius: $i + px;
+        }
+        .s-mt-#{$i}-mo{
+            margin-top: $i + px;
+        }
+        .s-mt-#{$i}-mo{
+            margin: $i + px;
+        }
+        .s-ml-#{$i}-mo{
+            margin-left: $i + px;
+        }
+        .s-mr-#{$i}-mo{
+            margin-right: $i + px;
+        }
+    }
+}
 /*larg devices*/
 @media (min-width: 992px) { 
+    .s-lg-none{
+        display: none;
+    }
+    .s-lg-d-block{
+        display: block;
+    }
+    .s-lg-d-flex{
+        display: flex;
+    }
     .s-container{
         width:  960px;
     }
@@ -95,12 +308,26 @@
 }
 
 /*extra larg devices*/
-@media (min-width: 1200px) {  
+@media (min-width: 1200px) { 
+    .s-xl-none{
+        display: none;
+    }
+    .s-xl-d-block{
+        display: block;
+    }
+    .s-xl-d-flex{
+        display: flex;
+    } 
     .s-container{
         width: 1140px
     }
-     .s-lx-none{
+     .s-xl-none{
         display: none;
+    }
+    @for $i from 1 through 6{
+        .s-order-xl-#{$i}{
+            order: $i;
+        }
     }
 }
 

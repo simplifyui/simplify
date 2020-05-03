@@ -1,5 +1,6 @@
 @import './variables.scss';
 /*dafault styles saame an all devices*/
+$rowpadding:5px;
 *{
     padding: 0;
     margin: 0;
@@ -22,18 +23,21 @@
 .s-no-wrap{
     flex-wrap: nowrap;
 }
+.s-col{
+    width: 100%;
+    padding: 5px;
+}
 @for $i from 1 through $nthorder{
     .s-order-#{$i}
     {
-        order:$i;
+        order:$i !important;
     }
 }
 @for $i from 1 through $colums{
    .s-col-#{$i}
    {
-       flex-basis:100%/ $colums *$i;
-       padding: 5px;
-   }
+       flex-basis:100%/ $colums *$i; 
+    padding:$rowpadding  }
 }
 
 /*small devices*/
@@ -42,8 +46,8 @@
         .s-col-sm-#{$i}
         {
             flex-basis:100%/ $colums *$i;
-            padding: 5px;
-        }
+            padding:$rowpadding
+            }
      }
      
      @for $i from 1 through $nthorder{
@@ -60,8 +64,8 @@
         .s-col-md-#{$i}
         {
             flex-basis:100%/ $colums *$i;
-            padding: 5px;
-        }
+            padding:$rowpadding
+            }
      }
 
      @for $i from 1 through $nthorder{
@@ -78,8 +82,8 @@
         .s-col-lg-#{$i}
         {
             flex-basis:100%/ $colums *$i;
-            padding: 5px;
-        }
+            padding:$rowpadding
+            }
      }
 
      @for $i from 1 through $nthorder{
@@ -96,8 +100,8 @@
         .s-col-xl-#{$i}
         {
             flex-basis:100%/ $colums *$i;
-            padding: 5px;
-        }
+            padding: $rowpadding;
+            }
      }
 
      @for $i from 1 through $nthorder{
